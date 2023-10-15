@@ -1,0 +1,43 @@
+body {
+    background-color: #8B4513;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    font-size: 24px;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #DAA520;
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Different colors for each button */
+#toggleButton {
+    background-color: #228B22; /* Green */
+}
+
+#playButton {
+    background-color: #4682B4; /* Steel Blue */
+}
+
+#downloadButton {
+    background-color: #DAA520; /* Gold */
+}
+
+button:hover {
+    opacity: 0.8; /* Slight transparency when hovered */
+}
+
+/* Container for buttons */
+.container {
+    text-align: center;
+}
