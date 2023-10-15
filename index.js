@@ -23,7 +23,7 @@
         };
 
         mediaRecorder.onstop = () => {
-          audioBlob = new Blob(audioChunks, { type: "audio/webm" });
+          audioBlob = new Blob(audioChunks, { type: "audio/mp3" });
           audioUrl = URL.createObjectURL(audioBlob);
           audio = new Audio(audioUrl);
         };
