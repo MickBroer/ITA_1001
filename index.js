@@ -46,13 +46,13 @@ playButton.addEventListener("click", () => {
       isPlaying = true;
 
       audio.addEventListener("ended", () => {
-        playButton.textContent = "terugluisteren";
+        playButton.textContent = "luisteren";
         isPlaying = false;
       });
     } else {
       audio.pause();
       audio.currentTime = 0;
-      playButton.textContent = "terugluisteren";
+      playButton.textContent = "luisteren";
       isPlaying = false;
     }
   }
