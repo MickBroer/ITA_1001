@@ -1,5 +1,5 @@
 body {
-    background-color: #8B4513;
+    background-color: #16449d;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -15,6 +15,7 @@ button {
     margin: 10vh;
     border: none;
     border-radius: 50px;
+    width: 30vh;
     background-color: #DAA520;
     color: #FFFFFF;
     cursor: pointer;
@@ -27,7 +28,7 @@ button {
 }
 
 #playButton {
-    background-color: #4682B4; /* Steel Blue */
+    background-color: #91D3E7; /* Steel Blue */
 }
 
 #downloadButton {
@@ -41,4 +42,13 @@ button:hover {
 /* Container for buttons */
 .container {
     text-align: center;
+}
+
+#meisje{
+    position: absolute;
+    bottom: -10%;  /* Negative value for a small overflow */
+    right: 0;
+    width: 20%;  /* Adjust as needed */
+    height: auto;  /* Maintain aspect ratio */
+    z-index: -1; 
 }
