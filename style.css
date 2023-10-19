@@ -1,5 +1,5 @@
 body {
-    background-color: #16449d;
+    background-color: #91D3E7;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ button {
 }
 
 #playButton {
-    background-color: #91D3E7; /* Steel Blue */
+    background-color: #16449d; /* Steel Blue */
 }
 
 #downloadButton {
