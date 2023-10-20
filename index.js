@@ -60,9 +60,12 @@ playButton.addEventListener("click", () => {
 
 document.getElementById("downloadButton").addEventListener("click", () => {
   if (audioBlob) {
-    const a = document.createElement("a");
-    a.href = audioUrl;
-    a.download = "myRecording.wav";
-    a.click();
+    const fileName = prompt("Wat is je emailadres?");
+    if (fileName) {
+      const a = document.createElement("a");
+      a.href = audioUrl;
+      a.download = fileName + '.wav';
+      a.click();
+    }
   }
 });
