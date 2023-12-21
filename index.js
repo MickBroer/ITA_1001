@@ -61,10 +61,12 @@ playButton.addEventListener("click", () => {
 document.getElementById("downloadButton").addEventListener("click", () => {
   if (audioBlob) {
     const fileName = prompt("Wat is je emailadres?");
+    const uploadConfirmed = confirm("Wil je dit bestand uploaden?");
+    console.log(uploadConfirmed);
     if (fileName) {
       const a = document.createElement("a");
       a.href = audioUrl;
-      a.download = fileName + '.wav';
+      a.download = fileName + "_" + uploadConfirmed + '.wav';
       a.click();
     }
   }
