@@ -61,7 +61,7 @@ playButton.addEventListener("click", () => {
 document.getElementById("downloadButton").addEventListener("click", () => {
   if (audioBlob) {
     const fileName = prompt("Wat is je emailadres?");
-    const uploadConfirmed = confirm("Wil je dit bestand uploaden?");
+    const uploadConfirmed = confirm("Vind je het goed als wij de podcast delen op onze site?");
     console.log(uploadConfirmed);
     if (fileName) {
       const a = document.createElement("a");
